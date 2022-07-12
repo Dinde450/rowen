@@ -65,3 +65,37 @@ div {text-align: center;}
   <p>ROWEN est un site proposant des regle non-officiel ayant pour but de transformer vos Livre Dont Vous Ête Le Hero en RPG a jouer entre amis.</p>
     
   <img src="DF491B79-8099-43FF-85A9-0E9465A6B62D.jpeg" alt=" ">
+  
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Login page</title>
+</head>
+<body>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "RouleBoule123";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Passwords do not match.");
+        }
+    }
+</script>
+</body>
+</html>
+    
+  </body>
+</html>
