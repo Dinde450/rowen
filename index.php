@@ -103,3 +103,10 @@ if(isset($_GET['logout'])){
     session_destroy();
     header("Location: index.php"); //Redirect the user
 }
+//If user submits the form
+	$("#submitmsg").click(function(){	
+		var clientmsg = $("#usermsg").val();
+		$.post("post.php", {text: clientmsg});				
+		$("#usermsg").attr("value", "");
+		return false;
+	});
